@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-06T18:50:55.033Z",
+    "end": "2023-07-06T18:51:05.623Z",
+    "duration": 10590,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ecb1793-b32d-415d-9a97-e5a1d8bfcd63",
+      "title": "",
+      "fullFile": "cypress\\e2e\\addToCart.cy.ts",
+      "file": "cypress\\e2e\\addToCart.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60c6bdf2-3529-46e8-90e8-91f2e853eff7",
+          "title": "Add one product to cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add one product to cart positive case",
+              "fullTitle": "Add one product to cart Add one product to cart positive case",
+              "timedOut": null,
+              "duration": 4548,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\ndetailPage.detailAndAddProduct();\ndetailPage.checkCart();\ncartPage.cartList();",
+              "err": {},
+              "uuid": "1e18958f-3fb8-4b32-84c5-a2f2d7de980a",
+              "parentUUID": "60c6bdf2-3529-46e8-90e8-91f2e853eff7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1e18958f-3fb8-4b32-84c5-a2f2d7de980a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4548,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
